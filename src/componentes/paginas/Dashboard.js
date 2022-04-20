@@ -1,7 +1,10 @@
+import Monitoramento from '../dashboard/Monitoramento'
+import styles from './assets/Dashboard.module.css'
+
 function DashBoard() {
     return (
-        <div>
-            <h1>DashBoard</h1>
+        <div className={styles.main}>
+            <Monitoramento/>
         </div>
     )
 }
