@@ -1,8 +1,13 @@
+import styles from './assets/AtualizarDados.module.css'
+import Campos from '../formulario/Campos'
+
 function AtualizarDados() {
     return (
-        <div>
-            <h1>Atualizar dados</h1>
-        </div>
+        <section className={styles.main}>
+            <Campos titulo="Atualizar dados!"
+                texto_botao="Atualizar"
+            />
+        </section>
     )
 }
 

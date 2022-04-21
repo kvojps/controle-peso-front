@@ -6,6 +6,7 @@ import DashBoard from './componentes/paginas/Dashboard';
 import AtualizarDados from './componentes/paginas/AtualizarDados'
 import Contato from './componentes/paginas/Contato'
 import Sobre from './componentes/paginas/Sobre'
+import AcessarDados from './componentes/paginas/AcessarDados'
 
 import Navbar from './componentes/layout/Navbar'
 
@@ -22,6 +23,7 @@ function App() {
           <Route path = "/atualizar-dados" element={<AtualizarDados/>}></Route>
           <Route path = "/contato" element={<Contato/>}></Route>
           <Route path = "/sobre" element={<Sobre/>}></Route>
+          <Route path = "/acessar-dados" element={<AcessarDados/>}></Route>
         </Routes>
 
       </Router>
