@@ -1,0 +1,48 @@
+.main {
+    padding: 50px;
+}
+
+.container_home {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+
+.formulario {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 12%;
+}
+
+.img {
+    margin-top: 8%;
+    margin-left: 20%;
+    height: 70%;
+}
+
+
+.input_dados {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 30%;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.botao_finalizar {
+    padding: 8px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    margin-right: 5%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
