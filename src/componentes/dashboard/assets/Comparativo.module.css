@@ -1,0 +1,10 @@
+/* container que engloba tudo */
+.main {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.main h1 {
+    margin-top: 0;
+}
