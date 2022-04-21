@@ -11,10 +11,10 @@ function Campos({titulo, texto_botao ,texto_link}) {
                 <div className={styles.formulario}>
                     <h1>{titulo}</h1>
                     <p>Dados pessoais</p>
-                    <div>
+                    <div className={styles.max_width}>
                         <input type="text" placeholder="Nome" className={styles.input_dados}/>
                     </div>
-                    <div>
+                    <div className={styles.max_width}>
                         <input type="email" placeholder="Email" className={styles.input_dados}/>
                     </div>
                     <div>
@@ -22,7 +22,7 @@ function Campos({titulo, texto_botao ,texto_link}) {
                         <input type="text" placeholder="Gênero/sexo" className={styles.input_dados}/>
                     </div>
                     <p>Metas</p>
-                    <div>
+                    <div className={styles.max_width}>
                         <input type="text" placeholder="Peso inicial/atual" className={styles.input_dados}/>
                     </div>
                     <div>
