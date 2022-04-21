@@ -8,3 +8,33 @@
 .main h1 {
     margin-top: 0;
 }
+
+.container_imc {
+    display: flex;
+    justify-content: center;
+}
+
+.container_imc p {
+    text-align: center;
+}
+
+.barra_00 {
+    background-color: #F3ED5E;
+    width: 220px ;
+    height: 30px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.barra_01 {
+    background-color: #6AE468;
+    ;
+    width: 220px ;
+    height: 30px;
+}
+
+.barra_02 {
+    background-color: #E46868;
+    width: 220px ;
+    height: 30px;
+    border-radius: 0px 10px 10px 0px;
+}
