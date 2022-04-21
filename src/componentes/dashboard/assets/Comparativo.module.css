@@ -8,3 +8,36 @@
 .main h1 {
     margin-top: 0;
 }
+
+.container_comparativo {
+    display : flex;
+    justify-content: center;
+}
+
+.container_comparativo div {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container_comparativo div p {
+    font-size: 16px;
+}
+
+.bloco_1 {
+    background-color: #6AE468;
+    margin-right: 40px;
+}
+
+.bloco_2 {
+    background-color: #68C6E4;
+    margin-right: 40px;
+}
+
+.bloco_3 {
+    background-color: #6AE468;
+    margin-right: 40px;
+}
+
+.bloco_4 {
+    background-color: #68C6E4;
+}
