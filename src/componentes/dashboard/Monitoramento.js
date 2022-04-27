@@ -26,13 +26,13 @@ function Monitoramento() {
                 <div>
                 </div>
                 <div className={styles.form_text}>
-                    <img src={logo} alt="logo" className={styles.logo} /> 
+                    <img src={logo} alt="logo" className={styles.logo} />
                     <h1>Atualizar peso</h1>
                     <p>Qual o seu peso hoje?</p>
                 </div>
                 <div className={styles.form_input}>
-                    <input className={styles.form_peso} type="number" name="" id="form-peso" placeholder="Peso"/>
-                    <input className={styles.botao_enviar} type="button" value="Atualizar" id="botao-enviar"/>
+                    <input className={styles.form_peso} type="number" name="" id="form-peso" placeholder="Peso" />
+                    <input className={styles.botao_enviar} type="button" value="Atualizar" id="botao-enviar" />
                 </div>
             </div>
         </section>

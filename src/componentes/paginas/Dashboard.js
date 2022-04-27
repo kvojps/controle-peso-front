@@ -9,11 +9,11 @@ import styles from './assets/Dashboard.module.css'
 function DashBoard() {
     return (
         <div className={styles.main}>
-            <Monitoramento/>
-            <Evolucao/>
-            <Imc/>
-            <Comparativo/>
-            <Historico/>   
+            <Monitoramento />
+            <Evolucao />
+            <Imc />
+            <Comparativo />
+            <Historico />
         </div>
     )
 }
