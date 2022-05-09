@@ -1,10 +1,10 @@
 import styles from './assets/AtualizarDados.module.css'
-import Campos from '../formulario/Campos'
+import Form from '../formulario/FormAtualizacao'
 
 function AtualizarDados() {
     return (
         <section className={styles.main}>
-            <Campos titulo="Atualizar dados!"
+            <Form titulo="Atualizar dados!"
                 texto_botao="Atualizar"
             />
         </section>
