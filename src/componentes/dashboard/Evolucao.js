@@ -1,11 +1,11 @@
-import styles from './assets/Evolucao.module.css'
+import styles from "./assets/Evolucao.module.css";
 
 function Evolucao() {
-    return (
-        <section className={styles.main}>
-            <h1>Evolução</h1>
-        </section>
-    )
+  return (
+    <section className={styles.main}>
+      <h1>Evolução</h1>
+    </section>
+  );
 }
 
-export default Evolucao
+export default Evolucao;

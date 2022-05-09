@@ -1,12 +1,12 @@
-import styles from './assets/Home.module.css'
-import Form from '../formulario/FormCadastro'
+import styles from "./assets/Home.module.css";
+import Form from "../formulario/FormCadastro";
 
 function Home() {
-    return (
-        <section className={styles.main}>
-            <Form/>
-        </section>
-    )
+  return (
+    <section className={styles.main}>
+      <Form />
+    </section>
+  );
 }
 
-export default Home
+export default Home;

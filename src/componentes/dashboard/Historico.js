@@ -1,11 +1,11 @@
-import styles from './assets/Historico.module.css'
+import styles from "./assets/Historico.module.css";
 
 function Historico() {
-    return (
-        <section className={styles.main}>
-            <h1>Histórico</h1>
-        </section>
-    )
+  return (
+    <section className={styles.main}>
+      <h1>Histórico</h1>
+    </section>
+  );
 }
 
-export default Historico
+export default Historico;
