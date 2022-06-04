@@ -14,6 +14,21 @@ function FormCadastro() {
   });
 
   const [pesoInicial, setPesoInicial] = useState(0)
+  
+  function criarUsuario() {
+    fetch('http://localhost:8080/api/usuario/salvar', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
+  }
+
+  const submit = (e) => {
+    e.preventDefault();
+    criarUsuario()
+  }
 
   return (
     <div className={styles.container_home}>
