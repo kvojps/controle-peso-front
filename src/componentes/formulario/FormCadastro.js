@@ -1,22 +1,19 @@
 import styles from "./assets/Campos.module.css";
 import { Link } from "react-router-dom";
 import logoCadastro from "../../img/logo-cadastro.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function FormCadastro() {
   const [form, setForm] = useState({
     nome: "",
     email: "",
     altura: 0,
-    genero: "",
-    pesoInicial: 0,
+    sexo: "",
     pesoDesejado: 0,
-    dataDesejada: "",
+    registrosPeso: []
   });
 
-  // const submit = (e) => {
-  //   e.preventDefault();
-  // };
+  const [pesoInicial, setPesoInicial] = useState(0)
 
   return (
     <div className={styles.container_home}>
@@ -71,7 +68,7 @@ function FormCadastro() {
             onChange={(e) =>
               setForm({
                 ...form,
-                genero: e.target.value,
+                sexo: e.target.value,
               })
             }
           />
@@ -82,12 +79,7 @@ function FormCadastro() {
             type="text"
             placeholder="Peso inicial/atual"
             className={styles.input_dados}
-            onChange={(e) =>
-              setForm({
-                ...form,
-                pesoInicial: e.target.value,
-              })
-            }
+            onChange={(e) => setPesoInicial(e.target.value)}
           />
         </div>
         <div>
