@@ -1,9 +1,11 @@
 import styles from "./assets/Campos.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logoCadastro from "../../img/logo-cadastro.png";
 import { useState, useEffect } from "react";
 
 function FormCadastro() {
+  const navigate = useNavigate()
+
   const [form, setForm] = useState({
     nome: "",
     email: "",
@@ -23,11 +25,26 @@ function FormCadastro() {
       },
       body: JSON.stringify(form)
     })
+    adicionarPeso()
+  }
+
+  function adicionarPeso() {
+    fetch('http://localhost:8080/api/usuario/addpeso', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "email" : form.email,
+        "peso" : pesoInicial
+      })
+    })
   }
 
   const submit = (e) => {
-    e.preventDefault();
     criarUsuario()
+    localStorage.setItem("email", form.email)
+    navigate("/dashboard")
   }
 
   return (
@@ -124,6 +141,7 @@ function FormCadastro() {
         <div>
           <input
             type="button"
+            onClick={submit}
             value="Finalizar"
             id=""
             className={styles.botao_finalizar}
