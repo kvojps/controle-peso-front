@@ -8,8 +8,8 @@ function Monitoramento({usuario}) {
       <div className={styles.monitoramento}>
         <div className={styles.circulo_1}>
           <p>Peso inicial</p>
-          {/* <p className={styles.peso}>{usuario.registrosPeso[0].peso}</p> */}
-          {/* <p>{usuario.registrosPeso[0].data}</p> */}
+          {/* <p className={styles.peso}>{usuario.registrosPeso[0].peso}</p>
+          <p>{usuario.registrosPeso[0].data}</p> */}
         </div>
         <div className={styles.circulo_2}>
           <p>Peso atual</p>
